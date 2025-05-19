@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "14bc4332-77be-401f-993f-866d2a51350b",
+		"name": "SimpleShop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "44651774",
+		"_collection_link": "https://yumaanmustafa.postman.co/workspace/yumaan-mustafa's-Workspace~e00f6b6d-f158-44ed-88f7-d30668bff601/collection/44651774-14bc4332-77be-401f-993f-866d2a51350b?action=share&source=collection_link&creator=44651774"
+	},
+	"item": [
+		{
+			"name": "reviews",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.100.20:3000/reviews",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"100",
+						"20"
+					],
+					"port": "3000",
+					"path": [
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "products",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://192.168.100.20:3000/products",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"100",
+						"20"
+					],
+					"port": "3000",
+					"path": [
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NSwidXNlcm5hbWUiOiJ5b3VyVXNlcm5hbWUiLCJpYXQiOjE3NDc2Mjk0MzQsImV4cCI6MTc0NzYzMzAzNH0.VLd82aGzNl-Opst8sTLwj0qM-3mG76bt6Z_NPGZQjNI",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"username\": \"yourUsername\",\r\n  \"password\": \"yourPassword\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.100.20:3000/auth/profile",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"100",
+						"20"
+					],
+					"port": "3000",
+					"path": [
+						"auth",
+						"profile"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reviews",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://192.168.100.20:3000/reviews",
+					"protocol": "http",
+					"host": [
+						"192",
+						"168",
+						"100",
+						"20"
+					],
+					"port": "3000",
+					"path": [
+						"reviews"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
