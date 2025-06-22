@@ -5,7 +5,7 @@ import {
 import { useNavigation } from '@react-navigation/native';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
-const API_URL = 'http://192.168.100.20:3000/products';
+const API_URL = 'http://10.0.2.2:3000/products';
 
 const ProductListScreen = ({ navigation }) => {
   const [products, setProducts] = useState([]);
