@@ -11,7 +11,7 @@ import { useNavigation } from '@react-navigation/native';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 
-const API_URL = 'http://192.168.100.20:3000/contact';
+const API_URL = 'http://10.0.2.2:3000/contact';
 
 const UserSuggestion = () => {
   const [contacts, setContacts] = useState([]);
