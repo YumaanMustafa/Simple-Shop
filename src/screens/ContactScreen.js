@@ -4,7 +4,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { useNavigation, useRoute } from '@react-navigation/native';
 
-const API_URL = 'http://192.168.100.20:3000/contact';
+const API_URL = 'http://10.0.2.2:3000/contact';
 
 const ContactScreen = () => {
   const navigation = useNavigation();
